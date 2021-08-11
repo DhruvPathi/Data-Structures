@@ -21,27 +21,6 @@ class Node:
                 return
             else:
                 self.right = Node(data)
-    '''
-    def delete(self, val):
-        if val < self.data:
-            self.left = self.left.delete(val)
-        elif val > self.data:
-            self.right = self.right.delete(val)
-        else:
-            if self.right is None and self.left is None:
-                return None
-            if self.right is None:
-                return self.left
-            if self.left is None:
-                return self.right
-
-            min = self.right.findMin()
-            self.data = min
-            self.right = self.right.delete(min)
-        return self
-    '''
-
-
 
 
     def inOrderTraversal(self):
